@@ -1,0 +1,17 @@
+integer main()
+begin
+    integer i, j, rows;
+
+    writeString("Enter number of rows: ");
+    readInt(d);
+
+    for(i:=1; i<=rows; i++)
+    begin
+        for(j:=1; j<=i; j++)
+        begin
+            writeString("* ");
+        end
+        writeString("\n");
+    end
+    return 0;
+end
