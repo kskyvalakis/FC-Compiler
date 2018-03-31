@@ -1,0 +1,11 @@
+integer main()
+begin
+    integer x := 0,i;
+    integer ptra := 4;
+    for (i:=0;i<100;i++)
+    begin
+    	a[i] := i;
+    end
+
+    return integer;
+end

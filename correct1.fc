@@ -1,0 +1,65 @@
+string x := "saas\n\r\t\\\"\'";
+char x := '\'';
+integer a[100][2][2][5][6];
+integer b[100];
+
+static integer ackermann(integer m, integer n);
+
+void main()
+begin
+    integer x := 0,i;
+    integer ptra := 4;
+    integer b[100]:=4,y;    
+    integer foo();
+    integer x:= 4/2+5;
+    integer c[50][60]:=2, y;
+
+
+    for (i:=0;i<100;i++)	a[i] := i;  
+    
+    for (i:=0;i<100;i++)
+    begin
+	if (i >= 999 && i<200 && (i!=3 || i>5)) a[i+1] := 1; //   case 1: don't need reload 
+	if(b[1]!=3)
+   	begin    
+		b[i+(ptra mod i)/2] := a[97];
+		b[1]++;
+		continue;
+	end
+    end
+    
+    foo(b[11],b[23],b[23+5][x mod 2],4);
+    x := foo(5);
+
+    if(b[1]!=3)
+    begin
+    	b[10] := 5;
+    	if(b[5]>3)
+    	begin
+    	     b[11] := -6;
+    	     b[12] := -3;
+    	end
+    	else
+    	begin
+    	     b[12] := -3;
+    	end
+    end
+    else if(b[2]!=3)
+    begin
+    	b[11] := -6;
+  	b[11] := -6;  
+    end
+    else
+    	b[11] := 5;
+    
+    x := ackermann(n,m);
+          
+    return x<5;
+end
+
+integer ackermann(integer m, integer n)
+begin
+        if (!m) return n + 1;
+        if (!n) return ackermann(m - 1, 1);
+        return ackermann(m - 1, ackermann(m, n - 1));
+end
